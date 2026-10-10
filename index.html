@@ -1,63 +1,487 @@
-<html>
+```html
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DUSENGE Simon Pierre | ICT Professional</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
     <link href="styles/main.css" rel="stylesheet">
-    <title>My Portfolio: DUSENGE Simon Pierre</title>
 </head>
 
 <body>
-    <!-- Start of about me section-->
-    <center>
-        <h1>My Portfolio</h1>
-        <i>Simon Pierre DUSENGE, IT</i>
-    </center>
-    <div class="row">
-        <div class="col-lg-2">
 
-        </div>
-        <div class="col-lg-6">
-            <p>
-                <!-- Section to highlight about me-->
-                <br>
-                I am a passionate ICT professional and Software Developer dedicated to using technology to solve real-world problems.
-                I have experience in software development, database management, IT infrastructure, and healthcare information systems.
-                I continuously seek opportunities to learn new technologies,
-                improve my skills, and develop reliable solutions that create value for organizations and their users.
-            </p>
-        </div>
-        <div class="col-lg-4">
-            <div class="profile-img">
-                <img src="images/olvier.jpg" style="width: 40%; height: auto;" alt="Profile Image">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                DUSENGE<span>.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="#contact" class="btn btn-primary ms-lg-3">
+                    Let's Talk
+                </a>
+
             </div>
         </div>
-    </div>
-    <!-- End of about me section-->
+    </nav>
 
-    <!-- Start of projects section -->
-    <div class="row">
-        <div class="col-lg-2">
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-7">
+
+                    <p class="hero-small">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        DUSENGE <span>Simon Pierre</span>
+                    </h1>
+
+                    <h2>
+                        ICT Professional & Software Developer
+                    </h2>
+
+                    <p class="hero-description">
+                        I build reliable digital solutions, manage IT systems,
+                        and use technology to solve real-world problems.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-light btn-lg ms-2">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="mailto:your-email@example.com">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-5 text-center">
+
+                    <div class="profile-card">
+
+                        <div class="profile-circle">
+
+                            <img src="images/olvier.jpg"
+                                alt="DUSENGE Simon Pierre">
+
+                        </div>
+
+                        <div class="profile-info">
+
+                            <h4>DUSENGE Simon Pierre</h4>
+
+                            <p>
+                                ICT Professional
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-        <div class="col-lg-4">
-            <h3>Student Attendance System</h3>
-            <ul>
-                <li><a href="project1.html">Description: Enhancing effectiveness in capturing student atteandance</a></li>
-                <li><a href="project2.html">Deliverables: Afully fledged student attendance system</a></li>
-                <li><a href="project3.html">Role played: Developer</a></li>
-                <li><a href="project3.html">Status: completed</a></li>
-                <li><a href="project3.html">Budget:RWF 5,000,000</a></li>
-            </ul>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>ABOUT ME</span>
+                <h2>Who I Am</h2>
+            </div>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <p class="lead">
+                        I am a passionate ICT professional and software developer
+                        dedicated to using technology to solve real-world problems.
+                    </p>
+
+                    <p>
+                        I have experience in software development, database
+                        management, IT infrastructure, system administration,
+                        networking, and healthcare information systems.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies and transforming
+                        ideas into practical, reliable and user-friendly
+                        digital solutions.
+                    </p>
+
+                    <div class="about-stats">
+
+                        <div>
+                            <h3>ICT</h3>
+                            <p>Professional</p>
+                        </div>
+
+                        <div>
+                            <h3>Software</h3>
+                            <p>Developer</p>
+                        </div>
+
+                        <div>
+                            <h3>IT</h3>
+                            <p>Systems</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="about-card">
+
+                        <i class="bi bi-code-slash"></i>
+
+                        <h3>
+                            Turning Ideas Into Solutions
+                        </h3>
+
+                        <p>
+                            My goal is to create technology solutions that
+                            are simple, useful, secure and reliable.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="col-lg-4">
-            <h2>Projects 2</h2>
-            <ul>
-                <li><a href="project1.html">Project 1: [Project Name]</a></li>
-                <li><a href="project2.html">Project 2: [Project Name]</a></li>
-                <li><a href="project3.html">Project 3: [Project Name]</a></li>
-            </ul>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section dark-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>MY EXPERTISE</span>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-code-square"></i>
+
+                        <h4>Development</h4>
+
+                        <p>
+                            Python, HTML, CSS, JavaScript
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-database"></i>
+
+                        <h4>Databases</h4>
+
+                        <p>
+                            MySQL, SQLite, Database Management
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-server"></i>
+
+                        <h4>IT Infrastructure</h4>
+
+                        <p>
+                            Linux, Servers, Networking, Backups
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-hospital"></i>
+
+                        <h4>Health IT</h4>
+
+                        <p>
+                            OpenMRS & Healthcare Information Systems
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </div>
-    <!-- End of projects section -->
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>MY WORK</span>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="row g-4">
+
+
+                <!-- Project 1 -->
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+
+                        <h3>Student Attendance System</h3>
+
+                        <p>
+                            A digital system designed to improve the
+                            efficiency and accuracy of student attendance
+                            management.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Software</span>
+                            <span>Database</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-pc-display"></i>
+                        </div>
+
+                        <h3>ICT Asset Management</h3>
+
+                        <p>
+                            A system for managing ICT equipment, tracking
+                            asset movements, monitoring status and maintaining
+                            asset history.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SQLite</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+
+                        <h3>Healthcare IT Systems</h3>
+
+                        <p>
+                            IT support and system administration for
+                            healthcare information systems, databases,
+                            servers and infrastructure.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>OpenMRS</span>
+                            <span>Linux</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <div class="section-title">
+                    <span>GET IN TOUCH</span>
+                    <h2>Let's Work Together</h2>
+                </div>
+
+                <p>
+                    Have a project, idea or opportunity?
+                    Feel free to get in touch with me.
+                </p>
+
+                <a href="mailto:your-email@example.com"
+                    class="btn btn-primary btn-lg">
+                    <i class="bi bi-envelope"></i>
+                    Send Me an Email
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 DUSENGE Simon Pierre.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
